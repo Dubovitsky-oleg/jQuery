@@ -1,0 +1,145 @@
+.container {
+    margin: 0 auto;
+    width: 500px;
+}
+
+.form {
+    position: relative;
+}
+
+.input {
+    margin-top: 10px;
+    width: 459px;
+    text-indent: 20px;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid #d9ddde;
+    outline: none;
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+}
+
+.list li {
+    transition: 0.2s linear;
+    display: inline-block;
+    margin-bottom: 1px;
+    margin-left: 0;
+    margin-right: 1px;
+    padding: 10px;
+}
+
+.checkbox {
+    width: 9px;
+    height: 9px;
+    margin: 0;
+}
+
+.size-1 {
+    color: #fff;
+    text-align: center;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+    width: 20px;
+    height: 20px;
+}
+
+.size-2 {
+    color: #000;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    text-align: left;
+    width: 400px;
+    height: 20px;
+}
+
+.block1 {
+    background: #ee6a68;
+}
+
+.block2 {
+    background: #8f6dcb;
+}
+
+.block3 {
+    background: #f077a2;
+}
+
+.listColors {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border: 1px solid #fff;
+    padding: 0;
+    margin: 0;
+    border-radius: 2px;
+    outline-color: #d4c8c8;
+    z-index: 2;
+}
+
+.button-add {
+    position: absolute;
+    background: #26a59a;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    width: 46px;
+    height: 25px;
+    top: 14px;
+    right: 46px;
+    z-index: 2;
+}
+
+.button-add:hover {
+    cursor: pointer;
+    opacity: .8;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+.position-list {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 18px;
+    left: 320px;
+    width: 116px;
+}
+
+.block4 {
+    background: #ffe083;
+}
+
+
+/* Бирюзовый */
+
+.block5 {
+    background: #67d7e5;
+}
+
+.block6 {
+    background: #5eb3f6;
+}
+
+.block.active {
+    display: block;
+}
+
+.listColors.clicked {
+    outline-color: #d4c8c8;
+}
+
+.completed {
+    color: lightslategray;
+    text-decoration: line-through;
+}
+
+#documents ul li.active {
+    text-decoration: line-through
+}
