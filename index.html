@@ -10,48 +10,42 @@
 </head>
 
 <body>
-
-    <div id="documents" class="container">
-        <ul class="list" id="list">
-            <li id="li" class="size-1 block1">
-                <input class="checkbox" type="checkbox" id="chk1">
-                <label for="chk1"><li class="size-2 block1">Todo item 1</li></label>
+    <div class="container">
+        <ul class="list">
+            <li>
+                <div class="check__button color1">
+                    <input class="status" type='checkbox' />
+                    <p class="text-item">Todo item 1</p>
+                </div>
             </li>
+            <li>
+                <div class="check__button color2">
+                    <input class="status" type='checkbox' />
+                    <p class="text-item">Todo item 1</p>
+                </div>
+            </li>
+            <li>
+                <div class="check__button color3">
+                    <input class="status" type='checkbox' />
+                    <p class="text-item">Todo item 1</p>
+                </div>
+            </li>
+            <br>
         </ul>
-        <!-- <ul class="list" id="list">
-            <li class="size-1 block2">
-                <input class="checkbox" type="checkbox">
-            </li>
-            <li class="size-2 block2">Todo item 2</li>
-        </ul>
-        <ul class="list" id="list">
-            <li class="size-1 block3">
-                <input class="checkbox" type="checkbox">
-            </li>
-            <li class="size-2 block3">Todo item 3</li>
-        </ul>  -->
-        <form name="toDoList" class="form">
-            <input class="input" name="listColors" type="text" maxlength="70" placeholder="Add new item">
-            <div class=position-list>
-                <input type="radio" id="color1" class="listColors" name="radios-1" value="red!!!!!!!" checked>
-                <input type="radio" id="color2" class="listColors" name="radios-1" value=".block2">
-                <input type="radio" id="color3" class="listColors" name="radios-1" value=".block3">
-                <input type="radio" id="color4" class="listColors" name="radios-1" value=".block4">
-                <input type="radio" id="color5" class="listColors" name="radios-1" value=".block5">
-                <input type="radio" id="color6" class="listColors" name="radios-1" value=".block6">
-                <!-- <button type="button" class="listColors block1"></button>
-                <button type="button" class="listColors block2"></button>
-                <button type="button" class="listColors block3"></button>
-                <button type="button" class="listColors block4"></button>
-                <button type="button" class="listColors block5"></button>
-                <button type="button" class="listColors block6"></button> -->
-            </div>
-            <button type="button" class="button-add">Add</button>
+        <form id='form-id'>
+            <input type="text" name="ListItem" placeholder="Add new item..." />
+            <div class="mini-button color1" id="color1"></div>
+            <div class="mini-button color2" id="color2"></div>
+            <div class="mini-button color3" id="color3"></div>
+            <div class="mini-button color4" id="color4"></div>
+            <div class="mini-button color5" id="color5"></div>
+            <div class="mini-button color6" id="color6"></div>
+            <div class="button">Add</div>
         </form>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
     <script src="script.js"></script>
+
 </body>
 
 </html>
