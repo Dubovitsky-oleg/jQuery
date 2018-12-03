@@ -65,19 +65,12 @@ form>input {
     padding: 5px 20px;
     color: #fff;
     background: #26a59a;
+    text-decoration: none;
 }
 
 .button:hover {
     cursor: pointer;
     opacity: 0.8;
-}
-
-.mini-button:active {
-    border: 1px solid #cccccc;
-}
-
-.mini-button:focus {
-    border: 1px solid #cccccc;
 }
 
 .color1 {
@@ -115,4 +108,8 @@ form>input {
 
 .complete {
     text-decoration: line-through;
+}
+
+.mini-button:focus {
+    border: 1px solid #cccccc;
 }

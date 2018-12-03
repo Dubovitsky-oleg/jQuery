@@ -14,6 +14,13 @@ $(document).ready(function(e) {
         onAdd(color);
 
         let toAdd = $("input[name=ListItem]").val();
+
+        $('input').keyup(function() {
+            str = $(this).val()
+            str = str.replace(/\s/g, '')
+            $(this).val(str)
+        });
+
         if (!toAdd) {
             return false;
         }
@@ -22,6 +29,8 @@ $(document).ready(function(e) {
         } else {
             $('ul').prepend("<li>" + "<div class = 'check__button " + color + "'>" + " <input class='status' type='checkbox'/>" + " <p class='text-item'>" + toAdd + "</p>" + "</div>" + "</li>" + "<br>");
             $("#form-id")[0].reset(); // clean input
+            color = null;
+
         }
     });
     $(document).on("click", "input.status", function() {
